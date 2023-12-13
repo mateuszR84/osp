@@ -11,7 +11,7 @@
 # Ignore everything in the root except the "plugins" and "themes" directories
 /*
 !themes/
-!plugins/
+# !plugins/
 !README.md
 
 # Ignore everything in the "themes" directory
@@ -24,7 +24,6 @@ plugins/*
 # If you have a mixture of private (in repo) and public (published to market)
 # plugins, uncomment the following line to ignore all plugins in your namespace
 # because you'll want to manage public plugins via the automatic updater
-#plugins/responsive/*
 
 # Miscellaneous rules
 # ----------------------------------------------------------
@@ -73,5 +72,4 @@ node_modules/
 # Plugins
 # If all of your plugins are private and you didn't uncomment line 26,
 # then you don't need these rules
-#!plugins/responsive/private-plugin-name/
 /modules
