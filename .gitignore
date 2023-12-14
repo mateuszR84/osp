@@ -67,7 +67,7 @@ node_modules/
 !apiconnection.http
 
 # Themes
-!themes/mar/
+!themes/osp/
 
 # Plugins
 # If all of your plugins are private and you didn't uncomment line 26,
