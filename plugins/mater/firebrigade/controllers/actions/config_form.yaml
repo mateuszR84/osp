@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Action
+
+# Model Form Field configuration
+form: $/mater/firebrigade/models/action/fields.yaml
+
+# Model Class name
+modelClass: Mater\Firebrigade\Models\Action
+
+# Default redirect location
+defaultRedirect: mater/firebrigade/actions
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: mater/firebrigade/actions/update/:id
+    redirectClose: mater/firebrigade/actions
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: mater/firebrigade/actions
+    redirectClose: mater/firebrigade/actions
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

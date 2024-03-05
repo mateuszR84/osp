@@ -1,0 +1,122 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+
+    icons: 
+        mater.firebrigade::lang.models.unit.tab.basic_info: icon-home 
+        mater.firebrigade::lang.models.unit.tab.management: icon-user-secret
+        mater.firebrigade::lang.models.unit.tab.documents: icon-file-o
+
+    fields:
+        
+        # Basic info tab
+        _section:
+            label: mater.firebrigade::lang.models.unit.section_intro_name
+            type: section
+            span: full
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+
+        full_name:
+            label: mater.firebrigade::lang.models.unit.full_name
+            type: text
+            span: left    
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        abbreviation:
+            label: mater.firebrigade::lang.models.unit.abbr
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        legal_form:
+            label: mater.firebrigade::lang.models.unit.legal_form
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        registration_date:
+            label: mater.firebrigade::lang.models.unit.registration_date
+            type: datepicker
+            mode: date
+            span: right
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        regon:
+            label: mater.firebrigade::lang.models.unit.regon
+            type: text
+            size: medium
+            span: auto
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        tax_id_number:
+            label: mater.firebrigade::lang.models.unit.tax_id_number
+            type: text
+            size: medium
+            span: auto
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        krs:
+            label: mater.firebrigade::lang.models.unit.krs
+            type: text
+            size: medium
+            span: auto
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        account_number:
+            label: mater.firebrigade::lang.models.unit.account_number
+            type: text
+            size: medium
+            span: auto
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        
+        # Contact section
+        _section_contact:
+            label: mater.firebrigade::lang.models.unit.section_contact
+            type: section
+            span: full
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        town:
+            label: mater.firebrigade::lang.models.unit.town 
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        street:
+            label: mater.firebrigade::lang.models.unit.street 
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        postal_code:
+            label: mater.firebrigade::lang.models.unit.postal_code 
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        post_office:
+            label: mater.firebrigade::lang.models.unit.post_office 
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        phone_number:
+            label: mater.firebrigade::lang.models.unit.phone_number 
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        email:
+            label: mater.firebrigade::lang.models.unit.email 
+            type: email
+            span: right
+            tab: mater.firebrigade::lang.models.unit.tab.basic_info
+        
+        # Management tab
+        _section_management:
+            label: mater.firebrigade::lang.models.unit.section_management
+            type: section
+            span: full
+            tab: mater.firebrigade::lang.models.unit.tab.management
+
+        # Documents tab
+        _section_documents:
+            label: mater.firebrigade::lang.models.unit.section_documents
+            type: section
+            span: full
+            tab: mater.firebrigade::lang.models.unit.tab.documents
+        
+        upload:
+            label: mater.firebrigade::lang.models.unit.upload_documents
+            type: mediafinder
+            span: left
+            tab: mater.firebrigade::lang.models.unit.tab.documents

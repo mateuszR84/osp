@@ -1,0 +1,47 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    evidence_number:
+        label: mater.firebrigade::lang.models.action.evidence_number
+        type: text
+        span: left
+    type:
+        label: mater.firebrigade::lang.models.action.type
+        type: dropdown
+        span: right
+    action_place:
+        label: mater.firebrigade::lang.models.action.action_place
+        type: text
+        span: left
+    officer:
+        label: mater.firebrigade::lang.models.action.officer
+        type: dropdown
+        span: right
+    started_at:
+        label: mater.firebrigade::lang.models.action.started_at
+        type: datepicker
+        span: left
+    ended_at:
+        label: mater.firebrigade::lang.models.action.ended_at
+        type: datepicker
+        span: right
+    # TODO: Add relation
+    # firefighters:
+    #     label: mater.firebrigade::lang.models.action.firefighters
+    #     type: partial
+    #     span: full
+    #     path: $/mater/firebrigade/controllers/actions/_relation_render.htm
+    
+    section:
+        label: mater.firebrigade::lang.models.action.section_information
+        type: section
+        span: full
+    additional_information:
+        type: richeditor
+        span: full
+
+
+
+

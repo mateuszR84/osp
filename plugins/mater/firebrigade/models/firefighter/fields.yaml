@@ -1,0 +1,249 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    is_active:
+        label: mater.firebrigade::lang.models.firefighter.is_active
+        type: switch
+        span: left
+    duty_ended_at:
+        label: mater.firebrigade::lang.models.firefighter.duty_ended_at
+        type: datepicker
+        mode: date
+        span: left
+        trigger:
+            action: show
+            field: is_active
+            condition: checked
+    first_name:
+        label: mater.firebrigade::lang.models.firefighter.first_name
+        type: text
+        span: left
+
+    last_name:
+        label: mater.firebrigade::lang.models.firefighter.last_name
+        type: text
+        span: right
+        tab: mater.firebrigade::lang.models.firefighter.personal
+
+tabs:
+
+    icons:
+        mater.firebrigade::lang.models.firefighter.tab.personal: icon-user
+        mater.firebrigade::lang.models.firefighter.tab.contact: icon-envelope
+        mater.firebrigade::lang.models.firefighter.tab.duty: icon-users
+        mater.firebrigade::lang.models.firefighter.tab.driver: icon-truck
+        mater.firebrigade::lang.models.firefighter.tab.other: icon-archive
+    fields:
+
+        # Personal tab
+        membership_type:
+            label: mater.firebrigade::lang.models.firefighter.membership_type
+            type: dropdown
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+        gender:
+            label: mater.firebrigade::lang.models.firefighter.gender
+            type: balloon-selector
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+            options:
+                male: mater.firebrigade::lang.models.firefighter.gender_male
+                female: mater.firebrigade::lang.models.firefighter.gender_female
+        middle_name:
+            label: mater.firebrigade::lang.models.firefighter.middle_name
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+        father_name:
+            label: mater.firebrigade::lang.models.firefighter.father_name
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+
+        dob:
+            label: mater.firebrigade::lang.models.firefighter.dob
+            type: datepicker
+            mode: date
+            span: left
+            comment: mater.firebrigade::lang.models.firefighter.dob_comment
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+        birth_place:
+            label: mater.firebrigade::lang.models.firefighter.birth_place
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+        id_card:
+            label: mater.firebrigade::lang.models.firefighter.id_card
+            type: sensitive
+            allowCopy: false
+            hideOnTabChange: true
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+        pesel:
+            label: mater.firebrigade::lang.models.firefighter.pesel
+            type: sensitive
+            allowCopy: false
+            hideOnTabChange: true
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.personal
+
+        # Contact tab
+        town:
+            label: mater.firebrigade::lang.models.firefighter.town
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.contact
+        street:
+            label: mater.firebrigade::lang.models.firefighter.street
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.contact
+        postal_code:
+            label: mater.firebrigade::lang.models.firefighter.postal_code
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.contact
+            default: '26-035'
+        post_office:
+            label: mater.firebrigade::lang.models.firefighter.post_office
+            type: text
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.contact
+            # TODO:: dodać default value z settings model
+        phone_no:
+            label: mater.firebrigade::lang.models.firefighter.phone_no
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.contact
+        email:
+            label: mater.firebrigade::lang.models.firefighter.email
+            type: email
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.contact
+
+        # Duty tab
+        duty_function:
+            label: mater.firebrigade::lang.models.firefighter.duty_function
+            type: text
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+        duty_started_at:
+            label: mater.firebrigade::lang.models.firefighter.duty_started_at
+            type: datepicker
+            mode: date
+            span: right
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        _section:
+            label: mater.firebrigade::lang.models.firefighter.section_medical
+            type: section
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        medical_exam:
+            label: mater.firebrigade::lang.models.firefighter.medical_exam
+            type: datepicker
+            mode: date
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        _medical_exam_expiry:
+            label: mater.firebrigade::lang.models.firefighter.medical_exam_expiry
+            type: text
+            span: right
+            size: small
+            readOnly: true
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        _section_psy:
+            label: mater.firebrigade::lang.models.firefighter.section_psy
+            type: section
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        psycho_exam:
+            label: mater.firebrigade::lang.models.firefighter.psycho_exam
+            type: datepicker
+            mode: date
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        _psycho_exam_expiry:
+            label: mater.firebrigade::lang.models.firefighter.medical_exam_expiry
+            type: text
+            span: right
+            size: small
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+            trigger:
+                action: show
+                field: medical_exam
+                condition: value != null
+
+        _section_permissions:
+            label: mater.firebrigade::lang.models.firefighter.section_permissions
+            type: section
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+        is_chief:
+            label: mater.firebrigade::lang.models.firefighter.is_chief
+            type: checkbox
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.duty
+
+        # Driver tab
+
+        driver_license:
+            label: mater.firebrigade::lang.models.firefighter.driver_license
+            type: radio
+            span: full
+            tab: mater.firebrigade::lang.models.firefighter.tab.driver
+            options: getDriverLicenseOptions
+            inlineOptions: true
+        is_driver:
+            label: mater.firebrigade::lang.models.firefighter.is_driver
+            type: checkbox
+            span: left
+            tab: mater.firebrigade::lang.models.firefighter.tab.driver
+        _section_driver:
+            label: mater.firebrigade::lang.models.firefighter.section_driver
+            type: section
+            tab: mater.firebrigade::lang.models.firefighter.tab.driver
+            trigger:
+                action: show
+                field: is_driver
+                condition: checked
+        permission_no:
+            label: mater.firebrigade::lang.models.firefighter.permission_no
+            type: text
+            span: row
+            tab: mater.firebrigade::lang.models.firefighter.tab.driver
+            trigger:
+                action: show
+                field: is_driver
+                condition: checked
+        driver_exam:
+            label: mater.firebrigade::lang.models.firefighter.driver_exam
+            type: datepicker
+            mode: date
+            span: row
+            tab: mater.firebrigade::lang.models.firefighter.tab.driver
+            trigger:
+                action: show
+                field: is_driver
+                condition: checked
+
+        # Other tab
+        additional_info:
+            label: mater.firebrigade::lang.models.firefighter.additional_info
+            tab: mater.firebrigade::lang.models.firefighter.tab.other
+            prompt: mater.firebrigade::lang.models.firefighter.additional_info_prompt
+            type: repeater
+            form:
+                fields:
+                    add_info:
+                        label: mater.firebrigade::lang.models.firefighter.add_info
+                        type: richeditor
+
+
+
+

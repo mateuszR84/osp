@@ -1,0 +1,22 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    last_name:
+        label: mater.firebrigade::lang.models.firefighter.last_name 
+    first_name:
+        label: mater.firebrigade::lang.models.firefighter.first_name 
+    duty_function:
+        label: mater.firebrigade::lang.models.firefighter.duty_function 
+    membership_type:
+        label: mater.firebrigade::lang.models.firefighter.membership_type 
+    duty_started_at:
+        label: mater.firebrigade::lang.models.firefighter.duty_started_at 
+        type: date
+    medical_exam:
+        label: mater.firebrigade::lang.models.firefighter.medical_exam 
+        type: date
+    psycho_exam:
+        label: mater.firebrigade::lang.models.firefighter.psycho_exam 
+        type: date

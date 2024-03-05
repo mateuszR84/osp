@@ -11,7 +11,7 @@
 # Ignore everything in the root except the "plugins" and "themes" directories
 /*
 !themes/
-# !plugins/
+!plugins/
 !README.md
 
 # Ignore everything in the "themes" directory

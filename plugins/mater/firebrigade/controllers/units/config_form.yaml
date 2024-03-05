@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Unit
+
+# Model Form Field configuration
+form: $/mater/firebrigade/models/unit/fields.yaml
+
+# Model Class name
+modelClass: Mater\Firebrigade\Models\Unit
+
+# Default redirect location
+defaultRedirect: mater/firebrigade/units
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: mater/firebrigade/units/update/:id
+    redirectClose: mater/firebrigade/units
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: mater/firebrigade/units
+    redirectClose: mater/firebrigade/units
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

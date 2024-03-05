@@ -1,0 +1,15 @@
+v1.0.1:
+    - First version of Firebrigade
+
+v1.1.0: 
+    - Add Firefighter model and controller
+    - 1_1_0_create_firefighters_table.php
+v1.2.0: 
+    - Add Unit model and controller  
+    - 1_2_0_create_units_table.php
+v1.3.0: 
+    - Add Equipment model and controller
+    - 1_3_0_create_equipment_table.php
+    - 1_3_0_create_vehicles_table.php
+    - 1_3_0_create_actions_table.php
+    

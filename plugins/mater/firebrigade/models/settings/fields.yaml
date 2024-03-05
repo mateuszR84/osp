@@ -1,0 +1,136 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+
+    icons:
+        mater.firebrigade::lang.settings.tab.officers: icon-male
+        mater.firebrigade::lang.settings.tab.action_type: icon-cog
+        mater.firebrigade::lang.settings.tab.reminders: icon-exclamation
+        mater.firebrigade::lang.settings.tab.functions: icon-tasks
+
+    fields:
+
+        # Officers tab
+        _section_officers:
+            label: 'mater.firebrigade::lang.settings.officers.section_officers'
+            comment: 'mater.firebrigade::lang.settings.officers.section_officers_comment'
+            type: section
+            tab: 'mater.firebrigade::lang.settings.tab.officers'
+
+        officers:
+            type: repeater
+            prompt: 'mater.firebrigade::lang.settings.officers.add_officer'
+            tab: 'mater.firebrigade::lang.settings.tab.officers'
+            form:
+                fields:
+                    officer:
+                        type: dropdown
+                        emptyOption: 'mater.firebrigade::lang.settings.officers.officer_not_defined'
+
+        # Action type tab
+        _section_action_type:
+            label: 'mater.firebrigade::lang.settings.actions.section_action_type_label'
+            comment: 'mater.firebrigade::lang.settings.actions.section_action_type_comment'
+            type: section
+            tab: 'mater.firebrigade::lang.settings.tab.action_type'
+
+        _hint:
+            label: 'mater.firebrigade::lang.settings.info'
+            type: hint
+            mode: warning
+            comment: 'mater.firebrigade::lang.settings.actions.hint_comment'
+            tab: 'mater.firebrigade::lang.settings.tab.action_type'
+
+        action_type:
+            type: repeater
+            prompt: 'mater.firebrigade::lang.settings.actions.add_action_type'
+            tab: 'mater.firebrigade::lang.settings.tab.action_type'
+            form:
+                fields:
+                    type:
+                        type: text
+                        label: 'mater.firebrigade::lang.settings.actions.name'
+                        span: left
+                    slug:
+                        type: text
+                        label: 'mater.firebrigade::lang.settings.actions.slug'
+                        preset:
+                            field: type
+                            type: slug
+                        readOnly: true
+                        span: right
+
+        #Reminders tab
+        reminder_provider:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_provider'
+            type: dropdown
+            span: left
+            emptyOption: ---
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        _sections_reminders:
+            label: 'mater.firebrigade::lang.settings.reminders.section_reminders'
+            comment: 'mater.firebrigade::lang.settings.reminders.section_reminders_comment'
+            type: section
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        _hint_reminders:
+            label: 'mater.firebrigade::lang.settings.reminders.info'
+            type: hint
+            mode: warning
+            comment: 'mater.firebrigade::lang.settings.reminders.comment'
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        reminder_number:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_number'
+            type: text
+            span: left
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        reminder_period:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_period'
+            type: dropdown
+            emptyOption: ---
+            span: right
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        _hint_reminders_frequency:
+            label: 'mater.firebrigade::lang.settings.reminders.frequency_info'
+            comment: 'mater.firebrigade::lang.settings.reminders.frequency_comment'
+            type: hint
+            mode: warning
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        reminder_frequency:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_frequency'
+            type: number
+            span: left
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        reminder_fields:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_fields'
+            type: checkboxlist
+            span: full
+            options: getReminderFieldsOptions
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+
+        # Functions tab
+        _section_functions:
+            label: 'mater.firebrigade::lang.settings.functions.section_functions'
+            comment: 'mater.firebrigade::lang.settings.functions.section_functions_comment'
+            type: section
+            tab: 'mater.firebrigade::lang.settings.tab.functions'
+
+        functions:
+            type: repeater
+            prompt: 'mater.firebrigade::lang.settings.functions.functions'
+            tab: 'mater.firebrigade::lang.settings.tab.functions'
+            form:
+                fields:
+                    function:
+                        type: text
+                        label: 'mater.firebrigade::lang.settings.functions.name'
+                        span: left
+                    slug:
+                        type: text
+                        label: 'mater.firebrigade::lang.settings.functions.slug'
+                        preset:
+                            field: function
+                            type: slug
+                        readOnly: true
+                        span: right

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Equipment
+
+# Model Form Field configuration
+form: $/mater/firebrigade/models/equipment/fields.yaml
+
+# Model Class name
+modelClass: Mater\Firebrigade\Models\Equipment
+
+# Default redirect location
+defaultRedirect: mater/firebrigade/equipments
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: mater/firebrigade/equipments/update/:id
+    redirectClose: mater/firebrigade/equipments
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: mater/firebrigade/equipments
+    redirectClose: mater/firebrigade/equipments
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

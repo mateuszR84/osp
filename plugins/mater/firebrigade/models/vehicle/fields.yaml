@@ -1,0 +1,80 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    type:
+        label: mater.firebrigade::lang.models.vehicle.type
+        type: dropdown
+        span: left
+    brand:
+        label: mater.firebrigade::lang.models.vehicle.brand
+        type: text
+        span: right
+    model:
+        label: mater.firebrigade::lang.models.vehicle.model
+        type: text
+        span: left
+    vin:
+        label: mater.firebrigade::lang.models.vehicle.vin
+        type: text
+        span: right
+    registration_number:
+        label: mater.firebrigade::lang.models.vehicle.registration_number
+        type: text
+        span: left
+    prod_date:
+        label: mater.firebrigade::lang.models.vehicle.prod_date
+        type: datepicker
+        mode: date
+        span: right
+    fuel:
+        label: mater.firebrigade::lang.models.vehicle.fuel
+        type: dropdown
+        span: left
+    status:
+        label: mater.firebrigade::lang.models.vehicle.status
+        type: dropdown
+        span: right
+    
+tabs:
+    
+    icons:
+        mater.firebrigade::lang.models.vehicle.tab.technical: icon-filter 
+        mater.firebrigade::lang.models.vehicle.tab.equipment: icon-fire-extinguisher 
+        mater.firebrigade::lang.models.vehicle.tab.images: icon-camera 
+
+    fields:
+
+        # Technical exam tab
+        _section:
+            label: mater.firebrigade::lang.models.vehicle.section_technical
+            type: section
+            tab: mater.firebrigade::lang.models.vehicle.tab.technical
+        tech_inspection:
+            label: mater.firebrigade::lang.models.vehicle.tech_inspection
+            type: datepicker
+            mode: date
+            span: left
+            tab: mater.firebrigade::lang.models.vehicle.tab.technical
+        insurance:
+            label: mater.firebrigade::lang.models.vehicle.insurance
+            type: datepicker
+            mode: date
+            span: right
+            tab: mater.firebrigade::lang.models.vehicle.tab.technical
+        
+        # Images tab
+        _section_equipment:
+            label: mater.firebrigade::lang.models.vehicle.section_equipment
+            type: section
+            tab: mater.firebrigade::lang.models.vehicle.tab.equipment
+        
+        # Images tab
+        _section_images:
+            label: mater.firebrigade::lang.models.vehicle.section_images
+            type: section
+            tab: mater.firebrigade::lang.models.vehicle.tab.images
+
+
