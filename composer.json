@@ -49,14 +49,14 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "repositories": {
-        "mater/firebrigade-plugin": {
-            "type": "git",
-            "url": "git@github.com:mateuszR84/firebrigade.git"
-        },
         "octobercms": {
             "type": "composer",
             "url": "https://gateway.octobercms.com",
             "only": ["october/*", "*-plugin", "*-theme"]
+        },
+        "mater/firebrigade-plugin": {
+            "type": "vcs",
+            "url": "git@github.com:mateuszR84/firebrigade.git"
         }
     }
 }
