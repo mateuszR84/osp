@@ -8,8 +8,7 @@
         "php": "^8.0.2",
         "october/rain": "^3.5",
         "laravel/framework": "^9.0",
-        "october/all": "^3.5",
-        "mater/firebrigade-plugin": "dev-master"
+        "october/all": "^3.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"
@@ -53,10 +52,6 @@
             "type": "composer",
             "url": "https://gateway.octobercms.com",
             "only": ["october/*", "*-plugin", "*-theme"]
-        },
-        "mater/firebrigade-plugin": {
-            "type": "vcs",
-            "url": "git@github.com:mateuszR84/firebrigade.git"
         }
     }
 }
