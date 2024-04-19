@@ -12,6 +12,7 @@
 /*
 !themes/
 !plugins/
+!.github/
 !README.md
 
 # Ignore everything in the "themes" directory
