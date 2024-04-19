@@ -13,9 +13,6 @@ jobs:
               with:
                   ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
             - run: 'echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-            - run: 'composer -V'
-            - run: 'php -v'
-            - run: 'whoami'
-            - run: 'pwd'
             - run: 'ssh mateuszr84@mateuszr84.atthost24.pl -p 6022'
-            - run: 'composer create-project october/october /home/mateuszr84/websites/deploytest'
+            - run: 'cd /home/mateuszr84/websites/dev3lop/osp'
+            - run: 'touch test.deploy'
