@@ -1,12 +1,62 @@
-description = "Default layout"
-
 ==
-<html lang="pl" class="no-js">
+<!DOCTYPE html>
+<html lang="pl">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mateusz Rycombel">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>{{ this.page.title }}</title>
+    <meta content="Ochotnicza Straż Pożarna w Chańczy" name="description">
+    <meta content="straż pożarna, osp, straż, pożar, Chańcza, świętokrzyskie" name="keywords">
+    
+    <!-- OG -->
+    <meta property="og:title" content="{{ this.page.title }}">
+
+    <!-- Favicons -->
+    <link href="{{ 'assets/images/osp_favicon.jpg' | theme }}" rel="icon">
+    <link href="{{ 'assets/img/favicon_blue.png' | theme }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{'assets/vendor/aos/aos.css' | theme }}" rel="stylesheet">
+    <link href="{{'assets/vendor/bootstrap/css/bootstrap.min.css' | theme }}" rel="stylesheet">
+    <link href="{{'assets/vendor/bootstrap-icons/bootstrap-icons.css' | theme }}" rel="stylesheet">
+    <link href="{{'assets/vendor/boxicons/css/boxicons.min.css' | theme }}" rel="stylesheet">
+    <link href="{{'assets/vendor/glightbox/css/glightbox.min.css' | theme }}" rel="stylesheet">
+    <link href="{{'assets/vendor/remixicon/remixicon.css' | theme }}" rel="stylesheet">
+    <link href="{{'assets/vendor/swiper/swiper-bundle.min.css' | theme }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{'assets/css/style.css' | theme }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b577f4961.js" crossorigin="anonymous"></script>
+
+    {% styles %}
 
 </head>
 
 <body>
-   {% partial 'common/header' %} 
+    {% partial 'common/header' %}
+    {% page %}
+
+    <a href="#"
+       class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{{'assets/vendor/aos/aos.js' | theme }}"></script>
+    <script src="{{'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | theme }}"></script>
+    <script src="{{'assets/vendor/glightbox/js/glightbox.min.js' | theme }}"></script>
+    <script src="{{'assets/vendor/isotope-layout/isotope.pkgd.min.js' | theme }}"></script>
+    <script src="{{'assets/vendor/swiper/swiper-bundle.min.js' | theme }}"></script>
+    <script src="{{'assets/vendor/waypoints/noframework.waypoints.js' | theme }}"></script>
+    <script src="{{'assets/vendor/php-email-form/validate.js' | theme }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{'assets/js/main.js' | theme }}"></script>
+    {% partial 'common/footer' %}
+    {% scripts %}
 </body>
+
 </html>

@@ -69,6 +69,24 @@ tabs:
             span: left
             emptyOption: ---
             tab: 'mater.firebrigade::lang.settings.tab.reminders'
+        reminder_email:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_email'
+            type: text
+            span: right
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+            trigger:
+                field: reminder_provider
+                condition: value[mail][mail_sms]
+                action: show
+        reminder_sms:
+            label: 'mater.firebrigade::lang.settings.reminders.reminder_sms'
+            type: text
+            span: right
+            tab: 'mater.firebrigade::lang.settings.tab.reminders'
+            trigger:
+                field: reminder_provider
+                condition: value[sms][mail_sms]
+                action: show
         _sections_reminders:
             label: 'mater.firebrigade::lang.settings.reminders.section_reminders'
             comment: 'mater.firebrigade::lang.settings.reminders.section_reminders_comment'
@@ -101,12 +119,6 @@ tabs:
             label: 'mater.firebrigade::lang.settings.reminders.reminder_frequency'
             type: number
             span: left
-            tab: 'mater.firebrigade::lang.settings.tab.reminders'
-        reminder_fields:
-            label: 'mater.firebrigade::lang.settings.reminders.reminder_fields'
-            type: checkboxlist
-            span: full
-            options: getReminderFieldsOptions
             tab: 'mater.firebrigade::lang.settings.tab.reminders'
 
         # Functions tab

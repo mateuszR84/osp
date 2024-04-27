@@ -14,9 +14,9 @@ columns:
     duty_started_at:
         label: mater.firebrigade::lang.models.firefighter.duty_started_at 
         type: date
-    medical_exam:
+    date_exp:
         label: mater.firebrigade::lang.models.firefighter.medical_exam 
-        type: date
+        type: partial
     psycho_exam:
         label: mater.firebrigade::lang.models.firefighter.psycho_exam 
         type: date

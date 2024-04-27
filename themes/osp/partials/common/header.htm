@@ -1,3 +1,29 @@
-<header id="header">
-<p>Menu</p>
-</header>
+[BuilderBlock]
+label = "Header"
+category = "Theme Blocks"
+icon = "fa fa-window-maximize"
+==
+ <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <a href="{{ "home"|page }}" class="logo me-auto"><img src="{{ 'assets/img/eja_logo_sub.png' | theme }}" class="img-fluid" alt=""></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+        {% if this.page.url == "/" %}
+          <li><a class="nav-link scrollto" href="#services">Usługi</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#about">O nas</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Kontakt</a></li>
+        {% else %}
+          <li><a class="nav-link scrollto" href="{{ 'home' | page }}">Strona główna</a></li>
+        {% endif %}
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->

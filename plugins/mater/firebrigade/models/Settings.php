@@ -81,15 +81,4 @@ class Settings extends Model
             'mail_sms' => Lang::get('mater.firebrigade::lang.settings.reminders.mail_sms'),
         ];
     }
-
-    public function getReminderFieldsOptions()
-    {
-        $pluginManager = PluginManager::instance();
-        $plugins = $pluginManager->getPlugins();
-        $firebrigade = $plugins['Mater.Firebrigade'];
-
-        $models = $firebrigade->getModels();
-
-        return $models;
-    }
 }

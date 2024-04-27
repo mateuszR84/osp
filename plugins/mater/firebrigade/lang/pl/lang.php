@@ -59,6 +59,8 @@ return [
             'reminder_number' => 'Ilość',
             'reminder_period' => 'Rodzaj',
             'reminder_provider' => 'Wybierz sposób, w jaki chcesz otrzymywać powiadomienia:',
+            'reminder_email' => 'Podaj mail, na który chcesz otrzymać powiadomienia',
+            'reminder_sms' => 'Podaj nr. telefonu, na który chcesz otrzymać powiadomienia',
             'reminder_frequency' => 'Wybierz, co ile dni chcesz otrzymywać powiadomienie:',
             'frequency_info' => 'Przykład ustawienia',
             'frequency_comment' => 'Jeżeli chcesz otrzymywać powiadomienia codziennie wybierz 1 etc.',
