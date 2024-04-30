@@ -3,21 +3,34 @@ label = "Header"
 category = "Theme Blocks"
 icon = "fa fa-window-maximize"
 ==
- <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+<!-- ======= Header ======= -->
+<header id="header"
+        class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <a href="{{ "home"|page }}" class="logo me-auto"><img src="{{ 'assets/images/theme-logo.png' | theme }}" class="img-fluid" alt=""></a>
+        <a href="{{ "
+           home"|page
+           }}"
+           class="logo me-auto"><img src="{{ 'assets/images/theme-logo.png' | theme }}"
+                 class="img-fluid"
+                 alt=""></a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="#">O nas</a></li>
-          <li><a class="nav-link scrollto" href="#">Aktualności</a></li>
-          <li><a class="nav-link scrollto" href="#">Galeria</a></li>
-          <li><a class="nav-link scrollto" href="#">Kontakt</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <nav id="navbar"
+             class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto"
+                       href="{{'about'|page}}">O nas</a></li>
+                <li><a class="nav-link scrollto"
+                       href="#">Aktualności</a></li>
+                <li><a class="nav-link scrollto"
+                       href="{{'history'|page}}">Historia</a></li>
+                <li><a class="nav-link scrollto"
+                       href="#">Galeria</a></li>
+                <li><a class="nav-link scrollto"
+                       href="#">Kontakt</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
+</header><!-- End Header -->

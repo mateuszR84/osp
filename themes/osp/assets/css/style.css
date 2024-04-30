@@ -42,7 +42,7 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #112351;
+    background: #721121;
 }
 
 #preloader:before {
@@ -93,7 +93,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #112351;
+    background: #721121;
     color: #fff;
 }
 
@@ -109,12 +109,12 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
-    background-color: rgba(17, 35, 81, 0.95);
+    background-color: rgba(114, 17, 33, 0.95);
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: rgba(17, 35, 81, 0.85);
+    background: rgba(114, 17, 33, 0.85);
 }
 
 #header .logo {
@@ -233,7 +233,7 @@ h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(40, 58, 90, 0.9);
+    background: rgba(114, 17, 33, 0.95);
     transition: 0.3s;
     z-index: 999;
 }
@@ -268,7 +268,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-    color: #112351;
+    color: #721121;
 }
 
 .navbar-mobile .getstarted,
@@ -375,7 +375,7 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-    background: #112351;
+    background: #721121;
 }
 
 .hero .btn-watch-video {
@@ -593,13 +593,13 @@ section {
 }
 
 .about .content .btn-learn-more:hover {
-    background: #112351;
+    background: #721121;
     color: #fff;
     text-decoration: none;
 }
 
 .about h2 {
-    color: #112351;
+    color: #721121;
 }
 
 /*--------------------------------------------------------------
@@ -839,14 +839,14 @@ section {
 }
 
 .services h2 {
-    color: #112351;
+    color: #721121;
 }
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-    background: linear-gradient(rgba(40, 58, 90, 0.9), #112351),
+    background: linear-gradient(rgba(40, 58, 90, 0.9), #721121),
         url("../img/cta-bg.jpg") fixed center center;
     background-size: cover;
     padding: 120px 0;
@@ -1102,7 +1102,7 @@ section {
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 20px;
-    color: #112351;
+    color: #721121;
 }
 
 .team .member span {
@@ -1155,7 +1155,7 @@ section {
 }
 
 .team .member .social a:hover {
-    background: #112351;
+    background: #721121;
 }
 
 .team .member .social a:hover i {
@@ -1167,7 +1167,7 @@ section {
 }
 
 .team h2 {
-    color: #112351;
+    color: #721121;
 }
 
 /*--------------------------------------------------------------
@@ -1183,7 +1183,7 @@ section {
 
 .card {
     background-color: #f3f5fa;
-    border-color: #112351;
+    border-color: #721121;
     max-width: 100%;
     overflow: hidden;
 }
@@ -1213,7 +1213,7 @@ section {
 }
 
 .card-body h5 {
-    color: #112351;
+    color: #721121;
 }
 
 .read-more {
@@ -1224,7 +1224,7 @@ section {
 }
 
 .read-more:hover {
-    background-color: #112351;
+    background-color: #721121;
     color: #fff;
 }
 
@@ -1244,7 +1244,7 @@ section {
     left: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #112351;
+    color: #721121;
     font-weight: bold;
     border: 5px solid #fff;
 }
@@ -1256,7 +1256,7 @@ section {
 }
 
 .fa-calendar-days {
-    color: #112351;
+    color: #721121;
 }
 
 #blog-item {
@@ -1310,7 +1310,7 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing h2 {
-    color: #112351;
+    color: #721121;
 }
 
 .pricing .row {
@@ -1330,7 +1330,7 @@ section {
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 20px;
-    color: #112351;
+    color: #721121;
 }
 
 .pricing h4 {
@@ -1398,7 +1398,7 @@ section {
 }
 
 .pricing .buy-btn:hover {
-    background: #112351;
+    background: #721121;
     color: #fff;
 }
 
@@ -1412,7 +1412,7 @@ section {
 }
 
 .pricing .featured .buy-btn:hover {
-    background: #112351;
+    background: #721121;
 }
 
 @media (max-width: 992px) {
@@ -1440,7 +1440,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq h2 {
-    color: #112351;
+    color: #721121;
 }
 
 .faq .faq-list {
@@ -1527,7 +1527,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact h2 {
-    color: #112351;
+    color: #721121;
 }
 
 .contact .info {
@@ -1558,7 +1558,7 @@ section {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #112351;
+    color: #721121;
 }
 
 .contact .info p {
@@ -1704,7 +1704,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #112351;
+    background: #721121;
 }
 
 @keyframes animate-loading {
@@ -1764,7 +1764,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
     font-size: 14px;
-    background: #112351;
+    background: #721121;
 }
 
 #footer .footer-newsletter {
@@ -1781,7 +1781,7 @@ section {
     padding: 0;
     line-height: 1;
     font-weight: 600;
-    color: #112351;
+    color: #721121;
 }
 
 #footer .footer-newsletter form {
@@ -1817,7 +1817,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-    background: #112351;
+    background: #721121;
 }
 
 #footer .footer-top {
@@ -1836,7 +1836,7 @@ section {
     line-height: 1;
     text-transform: uppercase;
     font-weight: 600;
-    color: #112351;
+    color: #721121;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1850,7 +1850,7 @@ section {
 #footer .footer-top h4 {
     font-size: 16px;
     font-weight: bold;
-    color: #112351;
+    color: #721121;
     position: relative;
     padding-bottom: 12px;
 }
@@ -1910,7 +1910,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-    background: #112351;
+    background: #721121;
     color: #fff;
     text-decoration: none;
 }
@@ -1958,7 +1958,7 @@ section {
 .cookies-accept {
     background-color: #fff;
     border-color: #a67c00;
-    color: #112351;
+    color: #721121;
 }
 .cookies-accept:hover {
     background-color: #91e696;
@@ -1968,10 +1968,14 @@ section {
 .cookies-reject {
     background-color: #fff;
     border-color: #a67c00;
-    color: #112351;
+    color: #721121;
 }
 .cookies-reject:hover {
     background-color: #f5425d;
     border-color: #f5425d;
     color: #fff;
+}
+
+.history {
+    margin-top: 150px;
 }
