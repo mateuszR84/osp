@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: #444444;
 }
 
@@ -118,13 +118,13 @@ h6 {
 }
 
 #header .logo {
-    font-size: 30px;
+    font-size: 14px;
+    color: white;
     margin: 0;
     padding: 0;
     line-height: 1;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 #header .logo a {
@@ -200,6 +200,72 @@ h6 {
         left: -100%;
     }
 }
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+  color: #0c3c53;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #47b2e4;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+} 
 /**
 * Mobile Navigation
 */
@@ -314,6 +380,27 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.split-section {
+  display: flex; /* Enables flexbox for row layout */
+  height: 100vh; /* 100% viewport height */
+}
+
+.split-section__item {
+  flex: 1; /* Fills available space equally */
+}
+
+.split-section__item--large {
+  flex: 4; /* Occupies 4 parts out of 6 (80%) */
+}
+
+.split-section__item--small {
+  flex: 2; /* Occupies 2 parts out of 6 (20%) */
+}
+
+.baner img {
+    object-fit: cover;
+}
+
 .hero-img-mobile {
     margin-top: 80px;
 }
