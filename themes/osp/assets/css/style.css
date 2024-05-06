@@ -2059,6 +2059,10 @@ section {
     #footer .credits {
         padding-top: 4px;
     }
+
+    .footer-section {
+        text-align: center;
+    }
 }
 /* cookies */
 .cookies-accept {
