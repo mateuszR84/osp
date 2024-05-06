@@ -7,28 +7,38 @@ icon = "fa fa-window-maximize"
 <header id="header"
         class="fixed-top ">
     <div class="container d-flex align-items-center">
-    <p class="logo me-auto fst-italic motto">"Bogu na chwałę, ludziom na pożytek"</p>
-        <a href="{{ "home"|page }}" class="logo me-auto"><img src="{{ 'assets/images/theme-logo.png' | theme }}"
+        <p id="motto"
+           class="d-none d-lg-block col-4 text-center logo me-auto fst-italic motto">"Bogu na chwałę, ludziom na
+            pożytek"</p>
+        <a id="logo"
+           href="{{ 'home'|page
+           }}"
+           class="logo me-auto col-4 text-center"><img src="{{ 'assets/images/osp_logo.png' | theme }}"
                  class="img-fluid"
                  alt=""></a>
 
         <nav id="navbar"
              class="navbar">
             <ul>
-                <li><a class="nav-link scrollto"
-                       href="{{'about'|page}}">O nas</a></li>
+                <li class="dropdown">
+                    <a href="#"><span>O nas</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="{{'about'|page}}">O jednostce</a></li>
+                        <li><a href="#">Zarząd</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown"><a href="#"><span>Aktualności</span> <i class="bi bi-chevron-down"></i></a>
-                  <ul>
-                    <li><a href="#">Informacje</a></li>
-                    <li><a href="{{'project'|page}}">Projekt unijny</a></li>
-                  </ul>
-                </li> 
+                    <ul>
+                        <li><a href="#">Informacje</a></li>
+                        <li><a href="{{'project'|page}}">Projekt unijny</a></li>
+                    </ul>
+                </li>
                 <li><a class="nav-link scrollto"
                        href="{{'history'|page}}">Historia</a></li>
                 <li><a class="nav-link scrollto"
                        href="#">Galeria</a></li>
                 <li><a class="nav-link scrollto"
-                       href="#">Kontakt</a></li>
+                       href="{{ 'contact'|page }}">Kontakt</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

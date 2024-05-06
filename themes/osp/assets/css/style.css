@@ -31,8 +31,22 @@ h6 {
     font-family: "Jost", sans-serif;
 }
 
-#no-home-section {
-    margin-top: 150px;
+.no-home-section {
+    margin-top: 150px !important;
+}
+.form-input {
+    border: 2px solid #721121;
+    border-radius: 5px;
+}
+
+.osp-button {
+    background-color: #721121;
+    color: #ffcf99;
+}
+
+.osp-button:hover {
+    background-color: #a0182f;
+    color: #ffcf99;
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -82,7 +96,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #bf9b30;
+    background: #ffbf00;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -96,7 +110,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #721121;
+    background: #a0182f;
     color: #fff;
 }
 
@@ -204,71 +218,72 @@ h6 {
     }
 }
 .navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #a0182f;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #0c3c53;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .navbar .dropdown ul a i {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #47b2e4;
+.navbar .dropdown ul li:hover > a {
+    color: #ffc07f;
 }
 
-.navbar .dropdown:hover>ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
+.navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
 }
 
 .navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
+.navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
 }
 
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
 
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
-} 
+    .navbar .dropdown .dropdown:hover > ul {
+        left: -100%;
+    }
+}
 /**
 * Mobile Navigation
 */
@@ -384,20 +399,20 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 .split-section {
-  display: flex; /* Enables flexbox for row layout */
-  height: 100vh; /* 100% viewport height */
+    display: flex; /* Enables flexbox for row layout */
+    height: 100vh; /* 100% viewport height */
 }
 
 .split-section__item {
-  flex: 1; /* Fills available space equally */
+    flex: 1; /* Fills available space equally */
 }
 
 .split-section__item--large {
-  flex: 4; /* Occupies 4 parts out of 6 (80%) */
+    flex: 4; /* Occupies 4 parts out of 6 (80%) */
 }
 
 .split-section__item--small {
-  flex: 2; /* Occupies 2 parts out of 6 (20%) */
+    flex: 2; /* Occupies 2 parts out of 6 (20%) */
 }
 
 .baner img {
@@ -405,7 +420,7 @@ h6 {
 }
 
 .hero-img-mobile {
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .logo-image-mobile {
@@ -1957,7 +1972,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #bf9b30;
+    color: #721121;
     font-size: 18px;
     line-height: 1;
 }
@@ -1981,13 +1996,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #bf9b30;
+    color: #a0182f;
 }
 
 #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #bf9b30;
+    background: #a0182f;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -2016,7 +2031,7 @@ section {
 }
 
 #footer .footer-bottom .copyright strong {
-    color: #a67c00;
+    color: #ffbf00;
 }
 
 #footer .credits {
@@ -2026,6 +2041,7 @@ section {
 
 #footer .credits a {
     transition: 0.3s;
+    color: #ffbf00;
 }
 
 @media (max-width: 768px) {

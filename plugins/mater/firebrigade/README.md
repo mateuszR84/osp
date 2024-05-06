@@ -1,1 +1,0 @@
-Plugin pozwalający zarządzać jednostką straży pożarnej.

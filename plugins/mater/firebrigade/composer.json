@@ -1,8 +1,0 @@
-{
-    "name": "mater/firebrigade-plugin",
-    "type": "october-plugin",
-    "description": "Plugin for managing fire brigade unit",
-    "require": {
-        "composer/installers": "~1.0"
-    }
-}

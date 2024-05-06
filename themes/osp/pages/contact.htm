@@ -1,17 +1,43 @@
 url = "/kontakt"
 layout = "default"
 title = "Kontakt"
+
+[genericForm]
+messages_success = "Wiadomość została wysłana pomyślnie"
+messages_errors = "Wystąpiły błędy podczas wysyłania wiadomości. Spróbuj ponownie"
+mail_enabled = 1
+mail_subject = "Formularz OSP"
+mail_recipients[mateusz@studiodevs.pl] = "mateusz@studiodevs.pl"
+reset_form = 1
+redirect = "/kontakt"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
 ==
-<div id="no-home-section">
-    <div>
+<div class="no-home-section">
+    <div class="no-home-section-content">
         <div class="text-center">
             <h1>Kontakt</h1>
             <h2 class="mb-5">Ochotnicza Straż Pożarna w Chańczy</h2>
-            <h4>Adres:</h4>
-            <strong>Chańcza 59A</br> 26-035 Raków</strong>
+            {% component 'genericForm' %}
         </div>
-    <div class="d-flex justify-content-center">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5060.01767664939!2d21.075324!3d50.645527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717fb82ed2c681d%3A0xd686b94be35fdc7e!2sOchotnicza%20Stra%C5%BC%20Po%C5%BCarna!5e0!3m2!1spl!2spl!4v1714894930174!5m2!1spl!2spl" width="1280" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="text-center"></iframe>
-    </div>
+        <div class="d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5060.01767664939!2d21.075324!3d50.645527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717fb82ed2c681d%3A0xd686b94be35fdc7e!2sOchotnicza%20Stra%C5%BC%20Po%C5%BCarna!5e0!3m2!1spl!2spl!4v1714894930174!5m2!1spl!2spl"
+                    width="1280"
+                    height="450"
+                    style="border:1;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="text-center mb-4"></iframe>
+        </div>
     </div>
 </div>
+
+{% put scripts %}
+<script src="{{ ['@framework','@framework.extras'] |theme}}"></script>
+{% endput %}
