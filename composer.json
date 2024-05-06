@@ -10,7 +10,8 @@
         "laravel/framework": "^9.0",
         "october/all": "^3.6",
         "blakejones/magicforms-plugin": "^1.6",
-        "rainlab/deploy-plugin": "^2.2"
+        "rainlab/deploy-plugin": "^2.2",
+        "mater/firebrigade-plugin": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"
@@ -50,10 +51,18 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "repositories": {
+        "mater/firebrigade-plugin": {
+            "type": "git",
+            "url": "git@github.com:mateuszR84/firebrigade.git"
+        },
         "octobercms": {
             "type": "composer",
             "url": "https://gateway.octobercms.com",
-            "only": ["october/*", "*-plugin", "*-theme"]
+            "only": [
+                "october/*",
+                "*-plugin",
+                "*-theme"
+            ]
         }
     }
 }
