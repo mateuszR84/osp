@@ -12,6 +12,7 @@
 /*
 !themes/
 !plugins/
+!.github/
 !README.md
 
 # Ignore everything in the "themes" directory
@@ -19,7 +20,6 @@ themes/*
 
 # Ignore everything in the "plugins" directory, except your own namespace
 plugins/*
-!plugins/
 
 # If you have a mixture of private (in repo) and public (published to market)
 # plugins, uncomment the following line to ignore all plugins in your namespace
