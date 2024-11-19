@@ -1,11 +1,17 @@
 url = "/informacje"
 layout = "default"
 title = "Informacje"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "Brak nowych wpisów"
+sortOrder = "published_at desc"
+categoryPage = "blog"
+postPage = "blog-item"
 ==
 <div class="no-home-section">
     <h1 class="text-center mb-5">Informacje</h1>
 
-    <a href="{{ 'informations'|page }}">
-        <img class="mx-auto d-block" src="/themes/osp/assets/images/fotowoltaika_informacja.png" alt="fotowoltaika">
-    </a>
+    {% partial 'blog' posts = posts %}
 </div>

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-lg-4 mb-4 mt-4">
+                <div class="card">
+                    <div class="image-wrapper d-none d-lg-block">
+                        <a href="{{ "blog-item"|page({slug: post.slug}) }}"><img src="{{ post.featured_images[0].path }}" alt="{{ post.title }}" class="card-img-top"></a>
+                    </div>
+                    <div class="d-block d-sm-none">
+                        <a href="{{ "blog-item"|page({slug: post.slug}) }}"><img src="{{ post.featured_images[0].path }}" alt="{{ post.title }}" class="card-img-top-mobile"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-truncate">{{ post.title }}</h5>
+                        <p class="card-text text-truncate">{{ post.excerpt }}</p>
+                        <div class="row mt-4">
+                            <div class="col-sm-12 d-flex justify-content-center">
+                                <a href="{{ "blog-item"|page({slug: post.slug}) }}" class="btn read-more btn-sm">Czytaj dalej</a>
+                            </div>
+                            <div class="col-sm-12 d-flex justify-content-center mt-4">
+                                <p class="text-muted"><i class="fa-solid fa-calendar-days"></i> {{ post.published_at|date('d.m.Y') }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

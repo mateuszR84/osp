@@ -1,0 +1,33 @@
+url = "/informacje/:slug"
+layout = "default"
+title = "Wpis"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+==
+<?php
+function onEnd()
+{
+    if (isset($this->post))
+    $this->page->title = $this->post->title;
+}
+?>
+==
+<div class="container">
+    <div class="post-container mb-3">
+        <div class="col-lg-12">
+            <div class="post-content">
+                <h2 class="text-center">{{ post.title }}</h2> 
+                    <p class="post-meta mt-4 mb-2 text-center">
+                        <i class="fa-solid fa-user-pen"></i> {{ post.user.fullname }} | 
+                        <i class="fa-solid fa-calendar"></i> {{post.published_at|date('d.m.Y')}}
+                    </p>
+                <hr class="mb-4">
+                <div>
+                    {{ post.content|content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

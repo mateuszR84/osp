@@ -1,6 +1,14 @@
 url = "/"
 layout = "default"
 title = "OSP w Chańczy"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "Brak nowych wpisów"
+sortOrder = "published_at desc"
+categoryPage = "blog"
+postPage = "blog-item"
 ==
 <!-- ======= Hero Section ======= -->
 {% partial 'hero' %}
@@ -9,8 +17,6 @@ title = "OSP w Chańczy"
 <section>
     <hr>
     <h1 class="text-center mt-2">Najnowsze informacje i aktualności</h1>
-    <a href="{{ 'informations'|page }}">
-        <img class="mx-auto d-block" src="/themes/osp/assets/images/fotowoltaika_informacja.png" alt="fotowoltaika">
-    </a>
+    {% partial 'blog' posts = posts %}
 </section>
 </main>
