@@ -8,10 +8,11 @@
         "php": "^8.0.2",
         "october/rain": "^3.5",
         "laravel/framework": "^9.0",
-        "october/all": "^3.6",
+        "october/all": "^3.7",
         "blakejones/magicforms-plugin": "^1.6",
         "rainlab/deploy-plugin": "^2.2",
-        "mater/firebrigade-plugin": "dev-master"
+        "mater/firebrigade-plugin": "dev-master",
+        "rainlab/blog-plugin": "^1.7"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"
@@ -58,11 +59,7 @@
         "octobercms": {
             "type": "composer",
             "url": "https://gateway.octobercms.com",
-            "only": [
-                "october/*",
-                "*-plugin",
-                "*-theme"
-            ]
+            "only": ["october/*", "*-plugin", "*-theme"]
         }
     }
 }
